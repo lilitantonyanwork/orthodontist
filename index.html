@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Лиана мхитарян</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body class="home">
 <header>
@@ -22,16 +24,19 @@
             </button>
             <ul class="menu ">
                 <li class="menu__item">
-                    <a href="" class="menu__link"></a>
+                    <a href="index.html" class="menu__link">Главная</a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link"></a>
+                    <a href="blog.html" class="menu__link">Блог</a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link"></a>
+                    <a href="certificates.html" class="menu__link">Сертификаты</a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link"></a>
+                    <a href="story.html" class="menu__link">Истории</a>
+                </li>
+                <li class="menu__item">
+                    <a href="story.html" class="menu__link">Обо мне</a>
                 </li>
             </ul>
     </nav>
@@ -218,11 +223,13 @@
                 <h2>Секрет идеальной улыбки — </h2>
                 <h2>в надёжном стоматологе</h2>
             </div>
-            <a href="" class="btn btn__primary">Записаться на приём</a>
+            <a href="" class="btn btn__primary border-gradient">Записаться на приём</a>
         </div>
     </section>
     <section class="events">
+        <div class="event__image"></div>
         <div class="container">
+
             <div class="events__content">
                 <div class="event__item event__item--prev">
                     <div class="event__date">
@@ -230,7 +237,7 @@
                         </span>
                     </div>
                     <div class="event__info">
-                        <h3 class="event__title">Всемирная конференция
+                        <h3 class="event__title">Всемирная конференция <br>
                             ортодонтов</h3>
                         <span class="event__place">Москва</span>
                         <p class="event__text">Здесь собраны все полезные материалы: выступления, конференции и статьи от Лианы Мхитарян.</p>
@@ -255,7 +262,7 @@
                 </div>
 
             </div>
-            <a href="" class="btn btn__primary">Показать больше <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+            <a href="" class="btn btn__primary border-gradient">Показать больше <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2961 0.321677C19.5831 0.0860209 19.9534 -0.0276303 20.3254 0.00570802C20.6975 0.0390464 21.0409 0.216645 21.2801 0.499462L30.6731 11.6111C30.9017 11.8951 31.0086 12.256 30.9709 12.6167C30.9332 12.9774 30.7539 13.3093 30.4713 13.5414C30.1887 13.7735 29.8253 13.8875 29.4585 13.859C29.0918 13.8306 28.7509 13.6618 28.5087 13.3889L19.1157 2.27732C18.8767 1.99437 18.7614 1.62941 18.7952 1.26269C18.829 0.895971 19.0092 0.557496 19.2961 0.321677Z" fill="white"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2961 24.6783C19.0092 24.4425 18.829 24.104 18.7952 23.7373C18.7614 23.3706 18.8767 23.0056 19.1157 22.7227L28.5087 11.6111C28.7509 11.3382 29.0918 11.1694 29.4585 11.141C29.8253 11.1125 30.1887 11.2265 30.4713 11.4586C30.7539 11.6907 30.9332 12.0226 30.9709 12.3833C31.0086 12.744 30.9017 13.1049 30.6731 13.3889L21.2801 24.5005C21.0409 24.7834 20.6975 24.961 20.3254 24.9943C19.9534 25.0276 19.5831 24.914 19.2961 24.6783Z" fill="white"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M31 12.5C31 12.8684 30.8515 13.2217 30.5873 13.4821C30.323 13.7426 29.9646 13.889 29.5909 13.889H1.40909C1.03538 13.889 0.676969 13.7426 0.412713 13.4821C0.148458 13.2217 0 12.8684 0 12.5C0 12.1316 0.148458 11.7783 0.412713 11.5179C0.676969 11.2574 1.03538 11.111 1.40909 11.111H29.5909C29.9646 11.111 30.323 11.2574 30.5873 11.5179C30.8515 11.7783 31 12.1316 31 12.5Z" fill="white"/>
@@ -312,9 +319,11 @@
                        <div class="contact__socials df a-center">
                            <a href="" class="social__link">
                                <img src="images/tg.svg" alt="tg">
+                               <span>t.me/lianatg</span>
                            </a>
                            <a href="" class="social__link">
                                <img src="images/insta.svg" alt="tg">
+                               <span>lianainst</span>
                            </a>
                        </div>
                     <div class="contact__item df">

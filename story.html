@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+
+    <title>Лиана мхитарян</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body class="story-page">
 <header>
@@ -20,20 +23,23 @@
                     <rect y="24" width="100" height="4" rx="2" fill="white" fill-opacity="0.5"/>
                 </svg>
             </button>
-            <ul class="menu ">
-                <li class="menu__item">
-                    <a href="" class="menu__link"></a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link"></a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link"></a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link"></a>
-                </li>
-            </ul>
+        <ul class="menu ">
+            <li class="menu__item">
+                <a href="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+                <a href="blog.html" class="menu__link">Блог</a>
+            </li>
+            <li class="menu__item">
+                <a href="certificates.html" class="menu__link">Сертификаты</a>
+            </li>
+            <li class="menu__item">
+                <a href="story.html" class="menu__link">Истории</a>
+            </li>
+            <li class="menu__item">
+                <a href="story.html" class="menu__link">Обо мне</a>
+            </li>
+        </ul>
     </nav>
 </header>
 <main>
@@ -82,6 +88,30 @@
             </div>
 
             <div class="line"></div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contact__form">
+                <h2 class="section__title">Записаться на прием</h2>
+                <form action="">
+                    <div class="form__row border-gradient">
+                        <div class="form__col">
+                            <label for="name">  <span class="form__icon"></span>Ваше имя
+
+                            </label>
+                            <input id="name" type="text" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form__col">
+                            <label for="tel">  <span class="form__icon"></span>Телефон
+
+                            </label>
+                            <input id="tel" type="tel" placeholder="+7 (___) ___-__-__">
+                        </div>
+                    </div>
+                    <button class="btn btn__submit"><span>Записаться на приём</span></button>
+                </form>
+            </div>
         </div>
     </section>
 </main>

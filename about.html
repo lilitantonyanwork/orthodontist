@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Лиана мхитарян</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body class="about-page">
 <header>
@@ -20,20 +22,23 @@
                     <rect y="24" width="100" height="4" rx="2" fill="white" fill-opacity="0.5"/>
                 </svg>
             </button>
-            <ul class="menu ">
-                <li class="menu__item">
-                    <a href="" class="menu__link"></a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link"></a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link"></a>
-                </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link"></a>
-                </li>
-            </ul>
+        <ul class="menu ">
+            <li class="menu__item">
+                <a href="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+                <a href="blog.html" class="menu__link">Блог</a>
+            </li>
+            <li class="menu__item">
+                <a href="certificates.html" class="menu__link">Сертификаты</a>
+            </li>
+            <li class="menu__item">
+                <a href="story.html" class="menu__link">Истории</a>
+            </li>
+            <li class="menu__item">
+                <a href="story.html" class="menu__link">Обо мне</a>
+            </li>
+        </ul>
     </nav>
 </header>
 <main>
@@ -41,7 +46,13 @@
         <div class="container">
             <div class="about__content df">
                 <div class="about__left">
-                    <img src="images/about.png" alt="about">
+                    <div class="about__left--img">
+                     <img src="images/about.png" alt="about">
+                    </div>
+                    <div class="about__left--info">
+                        <h2 class="section__title">Лиана Мхитарян</h2>
+                        <h3 class="section__sub">Врач-ортодонт, клинический эксперт <span>FlexiLigner</span>, лектор.</h3>
+                    </div>
                 </div>
                 <div class="about__right">
                     <h2 class="section__title">Лиана Мхитарян</h2>
@@ -58,7 +69,7 @@
                         <h3>Профессиональный опыт и образование</h3>
                         <div class="experience__list">
                             <div class="experience__item df">
-                                <div class="experience__date">
+                                <div class="experience__date border-gradient">
                                    <span>2018 год</span>
                                     <span>ПСПБГМУ</span>
                                 </div>
@@ -78,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="experience__item df">
-                                <div class="experience__date">
+                                <div class="experience__date border-gradient">
                                   <span>2020 год</span>
                                     <span>ПСПБГМУ</span>
                                 </div>
@@ -98,7 +109,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="btn btn__primary">Сертификаты врача <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+                        <a href="" class="btn btn__primary border-gradient">Сертификаты врача <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 0.257342C0.768156 0.0688169 1.12646 -0.0221043 1.4865 0.00456643C1.84653 0.0312372 2.17884 0.173316 2.41036 0.399571L11.5004 9.28888C11.7216 9.51612 11.8251 9.80486 11.7886 10.0934C11.7521 10.382 11.5786 10.6475 11.3051 10.8332C11.0316 11.0189 10.6799 11.1101 10.325 11.0873C9.97009 11.0645 9.64021 10.9295 9.40581 10.7112L0.315814 1.82186C0.0844531 1.5955 -0.0271267 1.30353 0.00560399 1.01016C0.0383347 0.716778 0.212697 0.445998 0.49036 0.257342Z" fill="white"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 19.7425C0.212697 19.5539 0.0383347 19.2831 0.00560399 18.9897C-0.0271267 18.6963 0.0844531 18.4044 0.315814 18.178L9.40581 9.28871C9.64021 9.07039 9.97009 8.93541 10.325 8.91262C10.6799 8.88982 11.0316 8.98102 11.3051 9.16672C11.5786 9.35243 11.7521 9.61792 11.7886 9.90647C11.8251 10.195 11.7216 10.4838 11.5004 10.711L2.41036 19.6003C2.17884 19.8266 1.84653 19.9686 1.4865 19.9953C1.12646 20.022 0.768156 19.9311 0.49036 19.7425Z" fill="white"/>
                         </svg></a>
@@ -112,7 +123,7 @@
             <div class="cases__content df a-center">
                 <div class="cases__left">
                     <h2 class="section__title">Клинические случаи</h2>
-                    <a href="" class="btn btn__primary">Посмотреть все <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+                    <a href="" class="btn btn__primary border-gradient">Посмотреть все <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 0.257342C0.768156 0.0688169 1.12646 -0.0221043 1.4865 0.00456643C1.84653 0.0312372 2.17884 0.173316 2.41036 0.399571L11.5004 9.28888C11.7216 9.51612 11.8251 9.80486 11.7886 10.0934C11.7521 10.382 11.5786 10.6475 11.3051 10.8332C11.0316 11.0189 10.6799 11.1101 10.325 11.0873C9.97009 11.0645 9.64021 10.9295 9.40581 10.7112L0.315814 1.82186C0.0844531 1.5955 -0.0271267 1.30353 0.00560399 1.01016C0.0383347 0.716778 0.212697 0.445998 0.49036 0.257342Z" fill="white"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 19.7425C0.212697 19.5539 0.0383347 19.2831 0.00560399 18.9897C-0.0271267 18.6963 0.0844531 18.4044 0.315814 18.178L9.40581 9.28871C9.64021 9.07039 9.97009 8.93541 10.325 8.91262C10.6799 8.88982 11.0316 8.98102 11.3051 9.16672C11.5786 9.35243 11.7521 9.61792 11.7886 9.90647C11.8251 10.195 11.7216 10.4838 11.5004 10.711L2.41036 19.6003C2.17884 19.8266 1.84653 19.9686 1.4865 19.9953C1.12646 20.022 0.768156 19.9311 0.49036 19.7425Z" fill="white"/>
                     </svg></a>
@@ -120,19 +131,19 @@
                 <div class="cases__right">
                     <div class="cases__list df">
                         <div class="case">
-                            <div class="case__img">
+                            <div class="case__img border-gradient">
                                 <img src="images/p1.png" alt="p1">
                             </div>
-                            <a href="" class="btn btn__primary">Посмотреть <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+                            <a href="" class="btn btn__primary border-gradient">Посмотреть <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 0.257342C0.768156 0.0688169 1.12646 -0.0221043 1.4865 0.00456643C1.84653 0.0312372 2.17884 0.173316 2.41036 0.399571L11.5004 9.28888C11.7216 9.51612 11.8251 9.80486 11.7886 10.0934C11.7521 10.382 11.5786 10.6475 11.3051 10.8332C11.0316 11.0189 10.6799 11.1101 10.325 11.0873C9.97009 11.0645 9.64021 10.9295 9.40581 10.7112L0.315814 1.82186C0.0844531 1.5955 -0.0271267 1.30353 0.00560399 1.01016C0.0383347 0.716778 0.212697 0.445998 0.49036 0.257342Z" fill="white"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 19.7425C0.212697 19.5539 0.0383347 19.2831 0.00560399 18.9897C-0.0271267 18.6963 0.0844531 18.4044 0.315814 18.178L9.40581 9.28871C9.64021 9.07039 9.97009 8.93541 10.325 8.91262C10.6799 8.88982 11.0316 8.98102 11.3051 9.16672C11.5786 9.35243 11.7521 9.61792 11.7886 9.90647C11.8251 10.195 11.7216 10.4838 11.5004 10.711L2.41036 19.6003C2.17884 19.8266 1.84653 19.9686 1.4865 19.9953C1.12646 20.022 0.768156 19.9311 0.49036 19.7425Z" fill="white"/>
                             </svg></a>
                         </div>
                         <div class="case">
-                            <div class="case__img">
+                            <div class="case__img border-gradient">
                                 <img src="images/p3.png" alt="p1">
                             </div>
-                            <a href="" class="btn btn__primary">Посмотреть <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+                            <a href="" class="btn btn__primary border-gradient">Посмотреть <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 0.257342C0.768156 0.0688169 1.12646 -0.0221043 1.4865 0.00456643C1.84653 0.0312372 2.17884 0.173316 2.41036 0.399571L11.5004 9.28888C11.7216 9.51612 11.8251 9.80486 11.7886 10.0934C11.7521 10.382 11.5786 10.6475 11.3051 10.8332C11.0316 11.0189 10.6799 11.1101 10.325 11.0873C9.97009 11.0645 9.64021 10.9295 9.40581 10.7112L0.315814 1.82186C0.0844531 1.5955 -0.0271267 1.30353 0.00560399 1.01016C0.0383347 0.716778 0.212697 0.445998 0.49036 0.257342Z" fill="white"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 19.7425C0.212697 19.5539 0.0383347 19.2831 0.00560399 18.9897C-0.0271267 18.6963 0.0844531 18.4044 0.315814 18.178L9.40581 9.28871C9.64021 9.07039 9.97009 8.93541 10.325 8.91262C10.6799 8.88982 11.0316 8.98102 11.3051 9.16672C11.5786 9.35243 11.7521 9.61792 11.7886 9.90647C11.8251 10.195 11.7216 10.4838 11.5004 10.711L2.41036 19.6003C2.17884 19.8266 1.84653 19.9686 1.4865 19.9953C1.12646 20.022 0.768156 19.9311 0.49036 19.7425Z" fill="white"/>
                             </svg></a>
@@ -140,6 +151,10 @@
                     </div>
                 </div>
             </div>
+            <a href="" class="btn btn__primary btn__all border-gradient">Посмотреть все <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 0.257342C0.768156 0.0688169 1.12646 -0.0221043 1.4865 0.00456643C1.84653 0.0312372 2.17884 0.173316 2.41036 0.399571L11.5004 9.28888C11.7216 9.51612 11.8251 9.80486 11.7886 10.0934C11.7521 10.382 11.5786 10.6475 11.3051 10.8332C11.0316 11.0189 10.6799 11.1101 10.325 11.0873C9.97009 11.0645 9.64021 10.9295 9.40581 10.7112L0.315814 1.82186C0.0844531 1.5955 -0.0271267 1.30353 0.00560399 1.01016C0.0383347 0.716778 0.212697 0.445998 0.49036 0.257342Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.49036 19.7425C0.212697 19.5539 0.0383347 19.2831 0.00560399 18.9897C-0.0271267 18.6963 0.0844531 18.4044 0.315814 18.178L9.40581 9.28871C9.64021 9.07039 9.97009 8.93541 10.325 8.91262C10.6799 8.88982 11.0316 8.98102 11.3051 9.16672C11.5786 9.35243 11.7521 9.61792 11.7886 9.90647C11.8251 10.195 11.7216 10.4838 11.5004 10.711L2.41036 19.6003C2.17884 19.8266 1.84653 19.9686 1.4865 19.9953C1.12646 20.022 0.768156 19.9311 0.49036 19.7425Z" fill="white"/>
+            </svg></a>
         </div>
     </section>
     <section class="contacts">
@@ -147,7 +162,7 @@
             <div class="contact__form">
                 <h2 class="section__title">Записаться на прием</h2>
                 <form action="">
-                    <div class="form__row">
+                    <div class="form__row border-gradient">
                         <div class="form__col">
                             <label for="name">  <span class="form__icon"></span>Ваше имя
 
