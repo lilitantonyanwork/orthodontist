@@ -1,3 +1,11 @@
+@media screen and (min-width: 1921px){
+    .banner{
+        height: 100vh;
+    }
+    .btn.border-gradient:before{
+        padding: 2px;
+    }
+}
 @media  screen and (max-width: 1640px) {
     .container{
         max-width: 1240px;
