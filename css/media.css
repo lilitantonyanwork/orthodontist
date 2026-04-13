@@ -2,6 +2,12 @@
     .banner{
         height: 100vh;
     }
+    .events{
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 1920px){
+
     .btn.border-gradient:before{
         padding: 2px;
     }

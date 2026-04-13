@@ -166,6 +166,11 @@ input {
 
     transition: all 0.35s ease;
 }
+.btn__primary:hover{
+    box-shadow: 0px 0px 15px 0px #C2B18280;
+    border-radius: 50px;
+    transition: all .3s;
+}
 
 /* мягкий внутренний блик по краю */
 /*.btn__primary::before {*/
@@ -216,6 +221,16 @@ input {
     backdrop-filter: blur(10px);
     margin: 40px auto 0;
 
+}
+.feature__item:hover{
+    box-shadow: 0px 0px 15px 0px #C2B18280;
+    border-radius: 30px;
+    transition: all .3s;
+}
+.btn__submit:hover{
+    box-shadow: 0px 0px 15px 0px #C2B18280;
+    border-radius: 50px;
+    transition: all .3s;
 }
 .btn__submit span{
     font-family: Manrope, sans-serif;
@@ -665,7 +680,7 @@ swiper {
 .event__date span.border-gradient:before{
     border-radius: 15px;
 }
-.event__item--active .event__date span{
+.event__item .event__date span:hover{
     box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(204, 193, 135, 0.5);
 
 }
